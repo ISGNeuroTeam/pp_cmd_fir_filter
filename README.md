@@ -2,7 +2,7 @@
 Postprocessing command "fir_filter"
 
 Usage example:
-`... | fir_filter`
+`... |  fir_filter signal fs=100 lowcut=3 highcut=10`
 
 ## Getting started
 ###  Prerequisites
@@ -26,5 +26,5 @@ Use `pp` to test fir_filter command:
 pp
 Storage directory is /tmp/pp_cmd_test/storage
 Commmands directory is /tmp/pp_cmd_test/pp_cmd
-query: | otl_v1 <# makeresults count=100 #> |  fir_filter 
+query: | otl_v1 <# makeresults count=100 #> |  fir_filter signal fs=100 lowcut=3 highcut=10 
 ```
